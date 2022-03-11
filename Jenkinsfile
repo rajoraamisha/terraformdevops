@@ -1,14 +1,17 @@
 pipeline {
   agent any 
+  tools {
+     terraform 'Terraform'
+   }
   stages {
     stage("checkout") {
       steps {
-        sh 'terraform init'
+        sh ('terraform init')
       }
     }
     stage("checkout1") {
       steps {
-        sh 'terraform plan'
+        sh ('terraform plan')
       }
     }
   }
