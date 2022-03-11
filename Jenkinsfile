@@ -1,9 +1,14 @@
 pipeline {
   agent any 
   stages {
-    stage("test") {
+    stage("checkout") {
       steps {
-        echo "hello jenkins"
+        sh 'terraform init'
+      }
+    }
+    stage("checkout1") {
+      steps {
+        sh 'terraform plan'
       }
     }
   }
