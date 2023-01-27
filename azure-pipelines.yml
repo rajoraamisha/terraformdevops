@@ -25,7 +25,7 @@ steps:
     targetType: 'inline'
     script: |
       curl -s -u sumit.kumar.singh3@gds.ey.com:Welcome@12345 -H "Accept: application/json" -X POST -F \
-            "file=@"C:\Users\XG514JY\Downloads\TEST_002_01.00.0000.iar";type=application/octet-stream "\
+            "file=@"TEST_002_01.00.0000.iar";type=application/octet-stream "\
             https://oic-bmjmq3ynseyn-bo.integration.ocp.oraclecloud.com/ic/home
             displayName: 'Import Integration'
             workingDirectory: '$(System.DefaultWorkingDirectory)/'
