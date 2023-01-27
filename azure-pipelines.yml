@@ -11,7 +11,7 @@ steps:
     targetType: 'inline'
     script: |
       statusCode=$(curl -X GET \
-      https://integration-frzcl4bwjotr-fr.integration.ocp.oraclecloud.com/ic/home/ \
+      https://integration-frzcl4bwjotr-fr.integration.ocp.oraclecloud.com/ic/home \
       -u anupama.rana.garg@accenture.com:Revir210$ -H "Accept: application/json" -w "%{http_code}\n" -s)
         if [ $statusCode -eq 200 ]
           then
