@@ -11,8 +11,8 @@ steps:
     targetType: 'inline'
     script: |
       statusCode=$(curl -X GET \
-      https://oic-bmjmq3ynseyn-bo.integration.ocp.oraclecloud.com/ic/api/integration/v1/connections \
-      -u sumit.kumar.singh3@gds.ey.com:Welcome@12345 -H "Accept: application/json" -w "%{http_code}\n" -s)
+      https://integration-frzcl4bwjotr-fr.integration.ocp.oraclecloud.com/ic/home/ \
+      -u anupama.rana.garg@accenture.com:Revir210$ -H "Accept: application/json" -w "%{http_code}\n" -s)
         if [ $statusCode -eq 200 ]
           then
             echo "Connection successful"
